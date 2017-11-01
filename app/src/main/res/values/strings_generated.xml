@@ -1,0 +1,4 @@
+<resources>
+  <string name='app_uuid'>ApllicationUUID</string>
+  <string name='generated_app_name'>ApplicationName</string>
+</resources>

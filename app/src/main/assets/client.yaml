@@ -1,0 +1,38 @@
+version: 1
+versionName: "1.0.0"
+
+packageName: "packageName"
+appName: "ApplicationName"
+appUUID: "ApllicationUUID"
+
+views:
+  - name: hello_sales_view # Запрещено использовать верхний регистр и ,-*&^%$# и т.д
+    header: "Hello header"
+    label: "Hello"
+    color: "#FF1493"
+    icon_96: icons/icon-96.png
+    icon_192: icons/icon-192.png
+    icon_256: icons/icon-256.png
+    source: views/view.html
+    point: SALES_SCREEN # Variants are MAIN_SCREEN and SALES_SCREEN
+    grants:
+            - CASH_OPERATIONS_SELL
+    scripts:
+      - no-script
+    styles:
+      - "*.css"
+  - name: world_sales_view # Запрещено использовать верхний регистр и ,-*&^%$# и т.д
+    header: "World header"
+    label: "World"
+    color: "#0000CD"
+    icon_96: icons/icon-96.png
+    icon_192: icons/icon-192.png
+    icon_256: icons/icon-256.png
+    source: views/view.html
+    point: SALES_SCREEN # Variants are MAIN_SCREEN and SALES_SCREEN
+    grants:
+            - CASH_OPERATIONS_SELL
+    scripts:
+      - no-script
+    styles:
+      - "*.css"
