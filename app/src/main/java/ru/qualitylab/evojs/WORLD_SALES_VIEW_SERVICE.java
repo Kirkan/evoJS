@@ -1,4 +1,4 @@
-package ru.qualitylab.evotorjs;
+package ru.qualitylab.evojs;
 import android.content.Intent;; 
 import android.os.Bundle; 
 import android.os.RemoteException; 

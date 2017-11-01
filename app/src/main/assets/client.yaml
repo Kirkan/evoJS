@@ -1,9 +1,9 @@
 version: 1
 versionName: "1.0.0"
 
-packageName: "packageName"
-appName: "ApplicationName"
-appUUID: "ApllicationUUID"
+packageName: "ru.qualitylab.evojs"
+appName: "JS API Test"
+appUUID: "231a9e8c-9781-420a-a9dd-9a5c4cc65de1"
 
 views:
   - name: hello_sales_view # Запрещено использовать верхний регистр и ,-*&^%$# и т.д
@@ -14,7 +14,7 @@ views:
     icon_192: icons/icon-192.png
     icon_256: icons/icon-256.png
     source: views/view.html
-    point: SALES_SCREEN # Variants are MAIN_SCREEN and SALES_SCREEN
+    point: MAIN_SCREEN # Variants are MAIN_SCREEN and SALES_SCREEN
     grants:
             - CASH_OPERATIONS_SELL
     scripts:
