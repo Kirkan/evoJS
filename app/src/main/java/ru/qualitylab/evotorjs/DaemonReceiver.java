@@ -1,4 +1,4 @@
-package ru.qualitylab.evojs;
+package ru.qualitylab.evotorjs;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;

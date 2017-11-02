@@ -1,4 +1,4 @@
-package ru.qualitylab.evojs
+package ru.qualitylab.evotorjs
 
 import org.junit.Test
 

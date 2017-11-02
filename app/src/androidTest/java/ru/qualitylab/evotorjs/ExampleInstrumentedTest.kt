@@ -1,4 +1,4 @@
-package ru.qualitylab.evojs
+package ru.qualitylab.evotorjs
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

@@ -1,37 +1,64 @@
 version: 1
 versionName: "1.0.0"
 
-packageName: "ru.qualitylab.evojs"
+packageName: "ru.qualitylab.evotorjs"
 appName: "JS API Test"
 appUUID: "231a9e8c-9781-420a-a9dd-9a5c4cc65de1"
 
+capabilities:
+  - inventory
+  - storage
+  - http
+  - event-bus
+  - receipts
+plugins:
+  - name: discount
+    moments:
+      - evo.v2.receipt.sell.beforePositionsEdited
+    point: before
+    behavior: beforePositionsEdited.js
 views:
-  - name: hello_sales_view # Запрещено использовать верхний регистр и ,-*&^%$# и т.д
-    header: "Hello header"
-    label: "Hello"
+  - name: main_view # Запрещено использовать верхний регистр и ,-*&^%$# и т.д
+    header: "Main"
+    label: "Evo JS API"
     color: "#FF1493"
     icon_96: icons/icon-96.png
     icon_192: icons/icon-192.png
     icon_256: icons/icon-256.png
-    source: views/view.html
+    source: views/main_view.html
     point: MAIN_SCREEN # Variants are MAIN_SCREEN and SALES_SCREEN
     grants:
-            - CASH_OPERATIONS_SELL
+      - CASH_OPERATIONS_SELL
     scripts:
       - no-script
     styles:
       - "*.css"
-  - name: world_sales_view # Запрещено использовать верхний регистр и ,-*&^%$# и т.д
-    header: "World header"
-    label: "World"
+  - name: sales_view # Запрещено использовать верхний регистр и ,-*&^%$# и т.д
+    header: "Скидка"
+    label: "Discount"
     color: "#0000CD"
     icon_96: icons/icon-96.png
     icon_192: icons/icon-192.png
     icon_256: icons/icon-256.png
-    source: views/view.html
+    source: views/discount_view.html
     point: SALES_SCREEN # Variants are MAIN_SCREEN and SALES_SCREEN
     grants:
-            - CASH_OPERATIONS_SELL
+      - CASH_OPERATIONS_SELL
+    scripts:
+      - no-script
+    styles:
+      - "*.css"
+  - name: suggestion_view # Запрещено использовать верхний регистр и ,-*&^%$# и т.д
+    header: "Кетчуп"
+    label: "Ketchup"
+    color: "#0000CD"
+    icon_96: icons/icon-96.png
+    icon_192: icons/icon-192.png
+    icon_256: icons/icon-256.png
+    source: views/suggestion_view.html
+    point: SALES_SCREEN # Variants are MAIN_SCREEN and SALES_SCREEN
+    grants:
+      - CASH_OPERATIONS_SELL
     scripts:
       - no-script
     styles:

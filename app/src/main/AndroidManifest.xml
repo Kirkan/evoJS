@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><manifest package="ru.qualitylab.evojs">
+<?xml version="1.0" encoding="UTF-8"?><manifest package="ru.qualitylab.evotorjs">
   <application xmlns:android="http://schemas.android.com/apk/res/android" android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme">
     <meta-data android:value="231a9e8c-9781-420a-a9dd-9a5c4cc65de1" android:name="app_uuid"/>
     <service android:enabled="true" android:name=".UIPluginServiceImplementation" android:exported="true">
@@ -6,6 +6,7 @@
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.EVOTOR"/>
+        <action android:name="evo.v2.receipt.sell.beforePositionsEdited"/>
       </intent-filter>
     </service>
     <service android:enabled="true" android:name=".DaemonServiceImplementation" android:exported="true">
@@ -15,29 +16,45 @@
         <category android:name="android.intent.category.EVOTOR"/>
       </intent-filter>
     </service>
-    <activity android:icon="@mipmap/hello_sales_view_icon" android:label="Hello" android:name=".HELLO_SALES_VIEW">
+    <activity android:icon="@mipmap/main_view_icon" android:label="Evo JS API" android:name=".MAIN_VIEW">
       <intent-filter android:priority="90">
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.EVOTOR"/>
         <category android:name="android.intent.category.DEFAULT"/>
       </intent-filter>
-      <meta-data android:value="@color/hello_sales_view_launcher_color" android:name="ru.evotor.launcher.BACKGROUND_COLOR"/>
+      <meta-data android:value="@color/main_view_launcher_color" android:name="ru.evotor.launcher.BACKGROUND_COLOR"/>
     </activity>
-    <activity android:icon="@mipmap/world_sales_view_icon" android:label="World" android:name=".WORLD_SALES_VIEW">
+    <activity android:icon="@mipmap/sales_view_icon" android:label="Discount" android:name=".SALES_VIEW">
       <intent-filter android:priority="90">
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="evo.v2.receipt.sell.receiptDiscount"/>
         <category android:name="android.intent.category.DEFAULT"/>
       </intent-filter>
-      <meta-data android:value="@color/world_sales_view_launcher_color" android:name="ru.evotor.sales_screen.BACKGROUND_COLOR"/>
+      <meta-data android:value="@color/sales_view_launcher_color" android:name="ru.evotor.sales_screen.BACKGROUND_COLOR"/>
     </activity>
-    <service android:exported="true" android:icon="@mipmap/world_sales_view_icon" android:label="World" android:name=".WORLD_SALES_VIEW_SERVICE" android:enabled="true">
+    <service android:exported="true" android:icon="@mipmap/sales_view_icon" android:label="Discount" android:name=".SALES_VIEW_SERVICE" android:enabled="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
         <action android:name="evo.v2.receipt.sell.receiptDiscount"/>
         <category android:name="android.intent.category.DEFAULT"/>
       </intent-filter>
-      <meta-data android:value="@color/world_sales_view_launcher_color" android:name="ru.evotor.sales_screen.BACKGROUND_COLOR"/>
+      <meta-data android:value="@color/sales_view_launcher_color" android:name="ru.evotor.sales_screen.BACKGROUND_COLOR"/>
+    </service>
+    <activity android:icon="@mipmap/suggestion_view_icon" android:label="Ketchup" android:name=".SUGGESTION_VIEW">
+      <intent-filter android:priority="90">
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="evo.v2.receipt.sell.receiptDiscount"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data android:value="@color/suggestion_view_launcher_color" android:name="ru.evotor.sales_screen.BACKGROUND_COLOR"/>
+    </activity>
+    <service android:exported="true" android:icon="@mipmap/suggestion_view_icon" android:label="Ketchup" android:name=".SUGGESTION_VIEW_SERVICE" android:enabled="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <action android:name="evo.v2.receipt.sell.receiptDiscount"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data android:value="@color/suggestion_view_launcher_color" android:name="ru.evotor.sales_screen.BACKGROUND_COLOR"/>
     </service>
   </application>
 </manifest>
