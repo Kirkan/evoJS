@@ -30,7 +30,6 @@ daemons:
       - evotor.intent.action.cashOperation.IN
       - evotor.intent.action.cashOperation.CASH_OUT
       - evotor.intent.action.inventory.CARD_OPEN
-      - evotor.intent.action.inventory.PRODUCTS_UPDATED
       - evotor.intent.action.receipt.sell.POSITION_ADDED
       - evotor.intent.action.receipt.payback.POSITION_ADDED
       - evotor.intent.action.receipt.sell.POSITION_EDITED

@@ -41,6 +41,3 @@ onCashDrawerOpened = function(integrationEvent){
 onInventoryCardOpened = function(integrationEvent){
     logger.log("########## onInventoryCardOpened: " + JSON.stringify(integrationEvent));
 };
-onInventoryProductsUpdated = function(integrationEvent){
-    logger.log("########## onInventoryProductsUpdated: " + JSON.stringify(integrationEvent));
-};
