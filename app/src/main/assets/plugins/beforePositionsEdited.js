@@ -114,13 +114,4 @@ function processBeforePositionsEdited(actionData){
         }
     }
 
-//    if(data.receiptData.positionsCount > 0){
-//        for (i in data.receiptPositions){
-//            var inv = JSON.parse(inventory.getProduct(data.receiptPositions[i].uuid));
-//            logger.log(JSON.stringify(inv));
-//            if(inv != null && inv.NAME.toLowerCase().includes("мед")){
-//                receipt.addPosition(JSON.stringify(position));
-//            }
-//        }
-//    }
 }

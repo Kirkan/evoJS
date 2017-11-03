@@ -24,7 +24,6 @@
         <action android:name="evotor.intent.action.cashOperation.IN"/>
         <action android:name="evotor.intent.action.cashOperation.CASH_OUT"/>
         <action android:name="evotor.intent.action.inventory.CARD_OPEN"/>
-        <action android:name="evotor.intent.action.inventory.PRODUCTS_UPDATED"/>
         <action android:name="evotor.intent.action.receipt.sell.POSITION_ADDED"/>
         <action android:name="evotor.intent.action.receipt.payback.POSITION_ADDED"/>
         <action android:name="evotor.intent.action.receipt.sell.POSITION_EDITED"/>
@@ -45,7 +44,6 @@
         <action android:name="evotor.intent.action.cashOperation.IN"/>
         <action android:name="evotor.intent.action.cashOperation.CASH_OUT"/>
         <action android:name="evotor.intent.action.inventory.CARD_OPEN"/>
-        <action android:name="evotor.intent.action.inventory.PRODUCTS_UPDATED"/>
         <action android:name="evotor.intent.action.receipt.sell.POSITION_ADDED"/>
         <action android:name="evotor.intent.action.receipt.payback.POSITION_ADDED"/>
         <action android:name="evotor.intent.action.receipt.sell.POSITION_EDITED"/>
