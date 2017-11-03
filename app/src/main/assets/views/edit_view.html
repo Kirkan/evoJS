@@ -1,0 +1,30 @@
+<html>
+<head>
+  <script type='text/javascript' src="edit_main.js"></script>
+</head>
+<body onload="getData();">
+<h1><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Список товаров чека</span></h1>
+<input id="btnOK" name="btnOK" type="button" value="Get receipt data" onclick="getData()"/>
+<div id="data"></div>
+<div id="edit">
+  <table border="0" cellpadding="1" cellspacing="1">
+    <tbody>
+    <tr>
+      <td>UUID</td>
+      <td><input id="uuid" name="uuid" type="text" /></td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td><input id="price" name="price" type="text" /></td>
+    </tr>
+    <tr>
+      <td>Qty</td>
+      <td><input id="qty" name="qty" type="text" /></td>
+    </tr>
+    </tbody>
+  </table>
+  <p><input name="btnAdd" type="button" value="Add" onclick="addData()"/></p>
+  <p><input name="btnSave" type="button" value="Save" onclick="saveData()"/></p>
+</div>
+</body>
+</html>

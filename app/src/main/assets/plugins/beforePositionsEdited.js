@@ -95,21 +95,21 @@ function processBeforePositionsEdited(actionData){
                 receipt.editPosition(JSON.stringify(ped));
             }else if(actionData.changes[0].change.position.name.toLowerCase().includes("сосиски")){
                 //предложим добавить другой товар
-//                navigation.pushView("suggestion_view", {
-//                    receipt: data
-//                });
-                var position = {
-                        "uuid" : "8b90f73b-8860-400c-b9e4-26d1d3f75817",
-                        "productUuid" : "3dc58d3c-9e03-432c-8b92-56fbb1484c51",
-                        "productCode" : "123456",
-                        "productType" : "NORMAL",
-                        "name" : "Кетчуп",
-                        "measureName" : "шт",
-                        "measurePrecision" : 0,
-                        "price" : "77",
-                        "quantity" : "1"
-                    };
-                receipt.addPosition(JSON.stringify(position));
+                navigation.pushView("suggestion_view", {
+                    receipt: receipt
+                });
+//                var position = {
+//                        "uuid" : "8b90f73b-8860-400c-b9e4-26d1d3f75817",
+//                        "productUuid" : "3dc58d3c-9e03-432c-8b92-56fbb1484c51",
+//                        "productCode" : "123456",
+//                        "productType" : "NORMAL",
+//                        "name" : "Кетчуп",
+//                        "measureName" : "шт",
+//                        "measurePrecision" : 0,
+//                        "price" : "77",
+//                        "quantity" : "1"
+//                    };
+//                receipt.addPosition(JSON.stringify(position));
             }
         }
     }
